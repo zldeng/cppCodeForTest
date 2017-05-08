@@ -1,0 +1,206 @@
+1494216294352	1494216294352	15
+1494216294352	1494216294352	20
+1494216294352	1494216294352	5
+1494216294352	1494216294352	10
+addTask: 1_task 15 1
+addTask: 2_task 20 2
+addTask: 3_task 5 3
+addTask: 4_task 10 4
+worker_run begin:
+run task $$$ queue_size: 4
+get a task:3_task$$$
+beg run: 0xc8a300 name: 3_task
+isDon: 0	5
+remian 5 wait
+wait for next
+######add 3_task to task_queue again
+
+addTask: 3_task 4 4
+run task $$$ queue_size: 4
+get a task:3_task$$$
+beg run: 0xc8a300 name: 3_task
+isDon: 1	4
+remian 4 wait
+wait for next
+######add 3_task to task_queue again
+
+addTask: 3_task 3 4
+run task $$$ queue_size: 4
+get a task:3_task$$$
+beg run: 0xc8a300 name: 3_task
+isDon: 2	3
+remian 3 do it
+run the worker
+run the task 3_taskbeg: 1494216294352 time_o: 5 cur: 1494216296352 pro: 3
+run task $$$ queue_size: 3
+get a task:4_task$$$
+beg run: 0xc8a360 name: 4_task
+isDon: 2	8
+remian 8 wait
+wait for next
+1494216294352	1494216297352	5
+addTask: 5_task 5 3
+stop_task
+addTask: stop_worker 2147483647 4
+######add 4_task to task_queue again
+
+addTask: 4_task 7 5
+run task $$$ queue_size: 5
+get a task:5_task$$$
+beg run: 0xc8a2d0 name: 5_task
+isDon: 3	5
+remian 5 wait
+wait for next
+######add 5_task to task_queue again
+
+addTask: 5_task 4 5
+run task $$$ queue_size: 5
+get a task:5_task$$$
+beg run: 0xc8a2d0 name: 5_task
+isDon: 4	4
+remian 4 wait
+wait for next
+######add 5_task to task_queue again
+
+addTask: 5_task 3 5
+run task $$$ queue_size: 5
+get a task:5_task$$$
+beg run: 0xc8a2d0 name: 5_task
+isDon: 5	3
+remian 3 do it
+run the worker
+run the task 5_taskbeg: 1494216294352 time_o: 8 cur: 1494216299353 pro: 3
+run task $$$ queue_size: 4
+get a task:4_task$$$
+beg run: 0xc8a360 name: 4_task
+isDon: 5	5
+remian 5 wait
+wait for next
+######add 4_task to task_queue again
+
+addTask: 4_task 4 4
+run task $$$ queue_size: 4
+get a task:4_task$$$
+beg run: 0xc8a360 name: 4_task
+isDon: 6	4
+remian 4 wait
+wait for next
+######add 4_task to task_queue again
+
+addTask: 4_task 3 4
+run task $$$ queue_size: 4
+get a task:4_task$$$
+beg run: 0xc8a360 name: 4_task
+isDon: 7	3
+remian 3 do it
+run the worker
+run the task 4_taskbeg: 1494216294352 time_o: 10 cur: 1494216301353 pro: 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 7	8
+remian 8 wait
+wait for next
+######add 1_task to task_queue again
+
+addTask: 1_task 7 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 8	7
+remian 7 wait
+wait for next
+######add 1_task to task_queue again
+
+addTask: 1_task 6 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 9	6
+remian 6 wait
+wait for next
+######add 1_task to task_queue again
+
+addTask: 1_task 5 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 10	5
+remian 5 wait
+wait for next
+######add 1_task to task_queue again
+
+addTask: 1_task 4 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 11	4
+remian 4 wait
+wait for next
+######add 1_task to task_queue again
+
+addTask: 1_task 3 3
+run task $$$ queue_size: 3
+get a task:1_task$$$
+beg run: 0xc8a1b0 name: 1_task
+isDon: 12	3
+remian 3 do it
+run the worker
+run the task 1_taskbeg: 1494216294352 time_o: 15 cur: 1494216306355 pro: 3
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 12	8
+remian 8 wait
+wait for next
+######add 2_task to task_queue again
+
+addTask: 2_task 7 2
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 13	7
+remian 7 wait
+wait for next
+######add 2_task to task_queue again
+
+addTask: 2_task 6 2
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 14	6
+remian 6 wait
+wait for next
+######add 2_task to task_queue again
+
+addTask: 2_task 5 2
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 15	5
+remian 5 wait
+wait for next
+######add 2_task to task_queue again
+
+addTask: 2_task 4 2
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 16	4
+remian 4 wait
+wait for next
+######add 2_task to task_queue again
+
+addTask: 2_task 3 2
+run task $$$ queue_size: 2
+get a task:2_task$$$
+beg run: 0xc8a210 name: 2_task
+isDon: 17	3
+remian 3 do it
+run the worker
+run the task 2_taskbeg: 1494216294352 time_o: 20 cur: 1494216311356 pro: 3
+run task $$$ queue_size: 1
+get a task:stop_worker$$$
+beg run: 0xc8a3b0 name: stop_worker
+stop_worker
+hello world!

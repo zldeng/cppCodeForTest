@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 2.8)
+#工程名
+PROJECT(Verification C CXX)
+#开启编译命令行调试
+SET(CMAKE_VERBOSE_MAKEFILE ON)
+SET(CMAKE_CXX_COMPILER "g++")
+#设置全局编译参数
+SET(CMAKE_CXX_FLAGS "-D_FILE_OFFSET_BITS=64 -Wall -lpthread -std=c++0x")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
+
+MESSAGE(STATUS "CMAKE_CXX_FLAGS = " ${CMAKE_CXX_FLAGS})
+
+#设置全局库文件和可执行文件输出目录
+#SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/release)
+#SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/release)
+
+
+#添加工程子目录
+ADD_SUBDIRECTORY(src)
+
+
+#复制当前编译用的common库到本地
+install(DIRECTORY DESTINATION lib)
+
+
+
